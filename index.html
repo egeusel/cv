@@ -4,14 +4,14 @@
     <title>Ege Usel Personal Site</title>
 </head>
 
-<body>
+<body style="background-color: white">   
     <table cellspacing = "20">
         <tr>
             <td><img src="profilePhoto.png" alt="ege profile picture" width="200" height="200"></td>
             <td>
                 <h1>Ege Usel</h1>
                 <p>
-                    <em>Computer Science and Bioengineering double major at <strong><a href="https://www.berkeley.edu/">UC Berkeley</a></strong></em><br>
+                    <em>Computer Science and Bioengineering double major at UC Berkeley</strong></em><br>
                     <em>University of California, Berkeley</em><br>
                     <em>Berkeley, CA, 94720</em>
                 </p>
@@ -43,8 +43,7 @@
         <li><strong>BIOENG 131/231</strong>: Introduction to Computational Biology</li>
         <li><strong>BIOENG 145/245</strong>: Machine Learning for Computational Biology</li>
         <li><strong>BIOENG 134</strong>: Genetic Design Automation</li>
-        <li><strong>EECS 16A</strong>: Designing Information Devices and System-I </li>
-        <li><strong>EECS 106B</strong>: Robotic Manipulation and Interaction-II </li>        
+        <li><strong>EECS 16A</strong>: Designing Information Devices and System-I </li>      
     </ul>
     <h3>Bioengineering & Science Coursework</h3>
     <ul>
@@ -67,9 +66,15 @@
         <li><strong>BIOENG 110</strong>: Biomedical Physiology for Engineers</li>
     </ul>
 
-    <h3>Nontechnical Courses</h3>
+    <h3>Professional Courses</h3>
     <ul>
         <li><strong>UGBA 10</strong>: Principles of Business</li>
+        <li><strong>UGBA 103</strong>: Introduction to Finance</li>
+    </ul>
+        
+
+    <h3>Nontechnical Courses</h3>
+    <ul>
         <li><strong>FRENCH 3</strong>: Intermediate French</li>
         <li><strong>FRENCH 80</strong>: The Cultural History of Paris</li>
         <li><strong>COLWRIT R1A</strong>: Accelerated Reading and Composition</li>
@@ -97,14 +102,95 @@
         <li>Go</li>
         <li>MATLAB</li>
         <li>JavaScript</li>
+        <li>CSS</li>
+        <li>HTML</li>
         <li>SQL</li> 
+        <li>Assembly Language</li>
     </ul>
 
     <hr size="3" noshade>
-    <h3>Programming Projects</h3>
+    <h3>Highlighted Projects</h3>
     <ul>
-        <li>proj1</li>
+        <li>
+            <h4>Internet Protocol Implementations</h4>
+            <p>September – December 2022</p>
+            <ul>
+                <li>Implemented Distance Vector Protocol in Python for intradomain routing which computes efficient paths across the network; for this, a distributed algorithm running at each router was used; split horizon, poison reverse, and route poisoning were utilized to ensure time efficiency and to avoid congestion</li>
+                <li>Implemented Socket API which provides a logical pipe that connects a sender and a receiver; it uses Transmission Control Protocol to provide reliability; lost packets are retransmitted based on the nonfixed Retransmission Timeout value, which is constantly updated based on Round Trip Time, to avoid sending duplicate packets</li>
+            </ul>
+        </li>
+        <li>
+            <h4>Software Tools for Lab Automation</h4>
+            <p>September – December 2022</p>
+            <ul>
+                <li>These Java tools aim to reduce the time spent on routine wet lab tasks; one of these involves finding the best synthetic sequence by writing codon 
+                    optimization algorithms to maximize gene expression, which is faster and more reliable than manual methods; given a set of proteins, the program chooses a pair of RBS and CDS, involving the usage of sliding window, and Monte Carlo techniques among others</li>
+                <li>Other tools keep track of the lab inventory and contributes to overall effort; this also involved writing new parsers and serializers; the work consequently led to improvements in the course’s auto grader</li>
+            </ul>
+        </li>
+        <li>
+            <h4>NUMC</h4>
+            <p>August 2022</p>
+            <ul>
+                <li>Wrote Numpy in C which can perform matrix and vector operations, using C memory management, double pointers, and structs to architect the solution</li>
+                <li>Used SIMD instructions implemented through Intel Intrinsic, thread-level parallelism using OpenMP API, loop unrolling and algorithmic optimization
+                    techniques to improve the performance of array operations which significantly increased program speed</li>
+            </ul>
+        </li>
+        <li>
+            <h4>Uber Post-Lockdown Traffic Data</h4>
+            <p>November – December 2021</p>
+            <ul>
+                <li>Applied typical data science workflow (data cleaning, visualization, EDA, feature selection and modeling) on dataset which combined Uber Movement, Open Street Maps (OSM), census tracts of SF, and elevation datasets (for spatial partitioning purposes) to predict the effect of COVID on traffic speeds</li>
+                <li>Analyzed traffic speeds mapped by GPS coordinate using GeoDataFrame which mapped speed data to each GeoPandas point</li>
+                <li>In order to evaluate our hypothesis, as a team, developed various models including supervised regression model, k-nearest neighbors regression, decision
+                    tree regression, and linear regression; using the new data, drew conclusions from post-lockdown models to fix pre-lockdown ones, so that the traffic models- based estimates get used for pricing strategies</li>
+            </ul>
+        </li>
+        <li>
+            <h4>GITLET</h4>
+            <p>November – December 2021</p>
+            <ul>
+                <li>Coded Gitlet project, a command line program and a version control system using Java; the project architecture is inspired by the Git workflow, and has
+                    commands such as init, branch, checkout, and log, analogous to the original Git versions</li>
+                <li>When the init command is used, a hidden .gitlet repo is created in the current working director; it keeps track of the files that are staged to be added, staged
+                    to be removed as well as those that are deleted, edited, or newly created (untracked) since the last commit</li>
+                <li>Previous versions of files in the directory are saved using the Sha-1 code, the unique identifier of a file, and ensures memory efficiency of VCS; file opera-
+                    tions are handled using the java.nio and java.io packages and the last state of the program is preserved using the Java Serialization API
+                    </li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>Enigma</h4>
+            <p>October 2021</p>
+            <ul>
+                <li>Built a simulator in Java for a generalized version of the Enigma cypher machine</li>
+                <li>Project uses the Object-Oriented Programming Paradigm with appropriate data structures to implement reciprocal enigma algorithms</li>
+                <li>Program receives the following input: a configuration file containing the relevant information about the machine, the rotors and 
+                    reflectors being used and their corresponding inner wirings, an input file containing the current machine settings in which the message 
+                    will either be encoded or decoded, and an output file where the resulting encrypted/decrypted message is written</li>
+            </ul>
+        </li>
     </ul>
+
+    
+    <hr size="3" noshade>
+    <h3>Work Experience</h3>
+    <ul>
+        <li>
+            <h4>Sentromer DNA Technologies Inc.</h4>
+            <h5>Research & Development Intern</h5>
+            <p>September – December 2022</p>
+            <ul>
+                <li>Collaborated with the R&D team during the development and optimization process of COVID-19 Antibody, Antigen, PCR Test Kits</li>
+                <li>Performed Solid-Phase Oligonucleotide Synthesis and assisted the chemical engineers during quality control and routine Oligonucleotide synthesis procedure as well as diverse purification techniques including Standard (Desalting) Purification, RPC, and HPLC. Also assisted the team when running ddPCR</li>
+                <li>Shadowed the team when interacting with customers and doing routine lab work</li>
+                <li>Presented scientific publications to the R&D teams on various applications of LPS derivatives in vaccine technology and allergen immunotherapy</li>
+            </ul>
+        </li>
+    </ul>
+
 
     <hr size="3" noshade>
     <h3>Certificates</h3>
@@ -112,16 +198,16 @@
         <li>DALF C1 French Language CertificateDALF C1 French Language Certificate<br>
             Ministère de l'Éducation nationale et de la Jeunesse</li>
     </ul>
+    
 
     <hr size="3" noshade>
     <h3>Contact Information</h3>
     <p>
         <em>linkedin:</em> https://www.linkedin.com/in/ege-usel-a2aa50191<br>
         <em>email:</em> egeusel@berkeley.edu<br>
-        <em>phone:</em> (510) 520 3843<br>
     
         
-        <a href="contact-me.html">CONTACT ME</a>
+        <!-- <a href="contact-me.html">CONTACT ME</a> -->
         
         <!-- Include links to LinkedIn and Github --> 
     </p>
