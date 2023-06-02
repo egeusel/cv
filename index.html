@@ -1,218 +1,243 @@
-<!DOCTYPE html> 
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ege Usel Personal Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Ege Usel</title>
 </head>
-
-<body style="background-color: white">   
-    <table cellspacing = "20">
-        <tr>
-            <td><img src="profilePhoto.png" alt="ege profile picture" width="200" height="200"></td>
-            <td>
-                <h1>Ege Usel</h1>
-                <p>
-                    <em>Computer Science and Bioengineering double major at UC Berkeley</strong></em><br>
-                    <em>University of California, Berkeley</em><br>
-                    <em>Berkeley, CA, 94720</em>
-                </p>
-            </td>
-        </tr>
-    </table>
-
-
-    <p>
-        I am a senior at UC Berkeley (class of 2023) studying Computer Science and Bioenginering (concentration in Synthetic and Computational Biology).<br> 
-        I am passionate about software engineering, biomedical engineering, and computational biology. Feel free to contact me via egeusel@berkeley.edu.
-        
-    </p>
-    <hr size="3" noshade>
-    <h3>Computer Science & EECS Coursework</h3>
-
-
-    <ul>
-        <li><strong>CS 61A</strong>: Structure and Interpretation of Computer Programs </li>
-        <li><strong>CS 61B</strong>: Data Structures</li>
-        <li><strong>CS 61C</strong>: Computer Architecture</li>
-        <li><strong>CS 70</strong>: Discrete Mathematics and Probability Theory</li>
-        <li><strong>CS 160</strong>: User Interface Design and Development </li>
-        <li><strong>CS 161</strong>: Computer Security</li>
-        <li><strong>CS 168</strong>: Introduction to the Internet: Architecture and Protocols</li>
-        <li><strong>CS 170</strong>: Efficient Algorithms and Intractable Problems</li>
-        <li><strong>Data 8</strong>: Foundations of Data Science</li>
-        <li><strong>Data 100/200</strong>: Principles & Techniques of Data Science</li>
-        <li><strong>BIOENG 131/231</strong>: Introduction to Computational Biology</li>
-        <li><strong>BIOENG 145/245</strong>: Machine Learning for Computational Biology</li>
-        <li><strong>BIOENG 134</strong>: Genetic Design Automation</li>
-        <li><strong>EECS 16A</strong>: Designing Information Devices and System-I </li>      
-    </ul>
-    <h3>Bioengineering & Science Coursework</h3>
-    <ul>
-        <li><strong>ENGIN 7</strong>: Computer Programming for Scientists and Engineers (MATLAB, numerical analysis)</li>
-        <li><strong>Math 1A</strong>: Calculus-I</li>
-        <li><strong>Math 1B</strong>: Calculus-II</li>
-        <li><strong>Math 53</strong>: Multivariable Calculus</li>
-        <li><strong>Math 54</strong>: Linear Algebra and Differential Equations</li>
-        <li><strong>Physics 7A</strong>: Physics for Scientists and Engineers-I</li>
-        <li><strong>Physics 7B</strong>: Physics for Scientists and Engineers-II</li>
-        <li><strong>CHEM 1A</strong>: General Chemistry</li>
-        <li><strong>CHEM 1AL</strong>: General Chemistry Laboratory</li>
-        <li><strong>CHEM 3A</strong>: Chemical Structure and Reactivity (Organic Chemistry-I)</li>
-        <li><strong>CHEM 3AL</strong>: Organic Chemistry Laboratory</li>
-        <li><strong>CHEM 3B</strong>: Chemical Structure and Reactivity (Organic Chemistry-II)</li>
-        <li><strong>BIOENG 10</strong>: Introduction to Biomedicine for Engineers</li>
-        <li><strong>BIOENG 11</strong>: Engineering Molecules-I</li>
-        <li><strong>BIOENG 103</strong>: Engineering Molecules-II</li>
-        <li><strong>BIOENG 104</strong>: Biological Mass Transport Phenomena</li>
-        <li><strong>BIOENG 110</strong>: Biomedical Physiology for Engineers</li>
-    </ul>
-
-    <h3>Professional Courses</h3>
-    <ul>
-        <li><strong>UGBA 10</strong>: Principles of Business</li>
-        <li><strong>UGBA 103</strong>: Introduction to Finance</li>
-    </ul>
-        
-
-    <h3>Nontechnical Courses</h3>
-    <ul>
-        <li><strong>FRENCH 3</strong>: Intermediate French</li>
-        <li><strong>FRENCH 80</strong>: The Cultural History of Paris</li>
-        <li><strong>COLWRIT R1A</strong>: Accelerated Reading and Composition</li>
-        <li><strong>HISTORY R1B</strong>: Reading and Composition in History</li>
-        <li><strong>ETHSTD 173AC</strong>: Indigenous Peoples in Global Inequality</li>
-        <li><strong>BIOENG 100</strong>: Ethics in Science and Engineering</li> 
-        <li><strong>CS 194</strong>: Social Justice in EECS</li>     
-    </ul>
-
-    <h3>Seminar Courses</h3>
-    <ul>
-        <li><strong>BIOENG 26</strong>: Introduction to Bioengineering</li>
-        <li><strong>BIOENG 25</strong>: Careers in Biotechnology</li>
-        <li><strong>INDENG 195</strong>: A. Richard Newton Lecture Series</li>
-    </ul>
-
-   
-
-    <hr size="3" noshade>
-    <h3>Skills</h3>
-    <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C</li>
-        <li>Go</li>
-        <li>MATLAB</li>
-        <li>JavaScript</li>
-        <li>CSS</li>
-        <li>HTML</li>
-        <li>SQL</li> 
-        <li>Assembly Language</li>
-    </ul>
-
-    <hr size="3" noshade>
-    <h3>Highlighted Projects</h3>
-    <ul>
-        <li>
-            <h4>Internet Protocol Implementations</h4>
-            <p>September – December 2022</p>
+<body>
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-4 mb-4">
+                <img src="profilePhoto.png" alt="Ege profile picture" class="profile-img img-fluid">
+            </div>
+            <div class="col-lg-8">
+                <section id="hero">
+                    <h1 class="hero-title">Ege Usel</h1>
+                    <p class="hero-subtitle">Computer Science and Bioengineering double major at UC Berkeley</p>
+                    <p>
+                        I am a senior at UC Berkeley (class of 2023) studying Computer Science and Bioengineering (concentration in Computational Biology & Data Science).
+                        I am passionate about software engineering, biomedical engineering, and computational biology. Feel free to contact me via egeusel@berkeley.edu.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <section id="skills">
+            <h2 class="main-title">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Programming Languages:</h4>
+                    <p>Python, Java, C, Go, JavaScript, HTML, CSS, SQL, MATLAB, Assembly, X86, Scheme, .NET(#C)</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Libraries:</h4>
+                    <p>React, Bootstrap, jQuery, Node.js, Pandas, Numpy, PyTorch, Scikit-learn, Seaborn, Matplotlib, SciPy, Biopython</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Familiar With:</h4>
+                    <p>Operating Systems, Database Systems, Deep Neural Networks and Machine Learning, Data Science Workflow</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Languages:</h4>
+                    <p>English, French, Turkish</p>
+                </div>
+            </div>
+        </section>
+        <section id="coursework">
+            <h2 class="main-title">Coursework</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="computerscience.jpeg" alt="Computer Science" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Computer Science</h4>
+                            <ul>
+                                <li><strong>CS 61A</strong>: Structure and Interpretation of Computer Programs </li>
+                                <li><strong>CS 61B</strong>: Data Structures</li>
+                                <li><strong>CS 61C</strong>: Computer Architecture</li>
+                                <li><strong>CS 70</strong>: Discrete Mathematics and Probability Theory</li>
+                                <li><strong>CS 160</strong>: User Interface Design and Development </li>
+                                <li><strong>CS 161</strong>: Computer Security</li>
+                                <li><strong>CS 168</strong>: Introduction to the Internet: Architecture and Protocols</li>
+                                <li><strong>CS 170</strong>: Efficient Algorithms and Intractable Problems</li>
+                                <li><strong>Data 8</strong>: Foundations of Data Science</li>
+                                <li><strong>Data 100/200</strong>: Principles & Techniques of Data Science</li>
+                                <li><strong>BIOENG 131/231</strong>: Introduction to Computational Biology</li>
+                                <li><strong>BIOENG 145/245</strong>: Machine Learning for Computational Biology</li>
+                                <li><strong>BIOENG 134</strong>: Genetic Design Automation</li>
+                                <li><strong>EECS 16A</strong>: Designing Information Devices and System-I </li>    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="bioengineering.jpeg" alt="Bioengineering" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Bioengineering & Science</h4>
+                            <ul>
+                                <li><strong>ENGIN 7</strong>: Computer Programming for Scientists and Engineers (MATLAB, numerical analysis)</li>
+                                <li><strong>Math 1A</strong>: Calculus-I</li>
+                                <li><strong>Math 1B</strong>: Calculus-II</li>
+                                <li><strong>Math 53</strong>: Multivariable Calculus</li>
+                                <li><strong>Math 54</strong>: Linear Algebra and Differential Equations</li>
+                                <li><strong>Physics 7A</strong>: Physics for Scientists and Engineers-I</li>
+                                <li><strong>Physics 7B</strong>: Physics for Scientists and Engineers-II</li>
+                                <li><strong>CHEM 1A</strong>: General Chemistry</li>
+                                <li><strong>CHEM 1AL</strong>: General Chemistry Laboratory</li>
+                                <li><strong>CHEM 3A</strong>: Chemical Structure and Reactivity (OCHEM-I)</li>
+                                <li><strong>CHEM 3AL</strong>: Organic Chemistry Laboratory</li>
+                                <li><strong>CHEM 3B</strong>: Chemical Structure and Reactivity (OCHEM-II)</li>
+                                <li><strong>BIOENG 10</strong>: Introduction to Biomedicine for Engineers</li>
+                                <li><strong>BIOENG 11</strong>: Engineering Molecules-I</li>
+                                <li><strong>BIOENG 103</strong>: Engineering Molecules-II</li>
+                                <li><strong>BIOENG 104</strong>: Biological Mass Transport Phenomena</li>
+                                <li><strong>BIOENG 110</strong>: Biomedical Physiology for Engineers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="additional-courses">
+            <h2 class="main-title">Additional Courses</h2>
+            <h4>Professional Courses:</h4>
             <ul>
-                <li>Implemented Distance Vector Protocol in Python for intradomain routing which computes efficient paths across the network; for this, a distributed algorithm running at each router was used; split horizon, poison reverse, and route poisoning were utilized to ensure time efficiency and to avoid congestion</li>
-                <li>Implemented Socket API which provides a logical pipe that connects a sender and a receiver; it uses Transmission Control Protocol to provide reliability; lost packets are retransmitted based on the nonfixed Retransmission Timeout value, which is constantly updated based on Round Trip Time, to avoid sending duplicate packets</li>
+                <li>UGBA 10: Principles of Business</li>
+                <li>UGBA 103: Introduction to Finance</li>
             </ul>
-        </li>
-        <li>
-            <h4>Software Tools for Lab Automation</h4>
-            <p>September – December 2022</p>
+            <h4>Nontechnical Courses:</h4>
             <ul>
-                <li>These Java tools aim to reduce the time spent on routine wet lab tasks; one of these involves finding the best synthetic sequence by writing codon 
-                    optimization algorithms to maximize gene expression, which is faster and more reliable than manual methods; given a set of proteins, the program chooses a pair of RBS and CDS, involving the usage of sliding window, and Monte Carlo techniques among others</li>
-                <li>Other tools keep track of the lab inventory and contributes to overall effort; this also involved writing new parsers and serializers; the work consequently led to improvements in the course’s auto grader</li>
+                <li>FRENCH 3: Intermediate French</li>
+                <li>FRENCH 80: The Cultural History of Paris</li>
+                <li>COLWRIT R1A: Accelerated Reading and Composition</li>
+                <li>HISTORY R1B: Reading and Composition in History</li>
+                <li>ETHSTD 173AC: Indigenous Peoples in Global Inequality</li>
+                <li>BIOENG 100: Ethics in Science and Engineering</li>
+                <li>CS 194: Social Justice in EECS</li>
             </ul>
-        </li>
-        <li>
-            <h4>NUMC</h4>
-            <p>August 2022</p>
+            <h4>Seminar Courses:</h4>
             <ul>
-                <li>Wrote Numpy in C which can perform matrix and vector operations, using C memory management, double pointers, and structs to architect the solution</li>
-                <li>Used SIMD instructions implemented through Intel Intrinsic, thread-level parallelism using OpenMP API, loop unrolling and algorithmic optimization
-                    techniques to improve the performance of array operations which significantly increased program speed</li>
+                <li>BIOENG 26: Introduction to Bioengineering</li>
+                <li>BIOENG 25: Careers in Biotechnology</li>
+                <li>INDENG 195: A. Richard Newton Lecture Series</li>
             </ul>
-        </li>
-        <li>
-            <h4>Uber Post-Lockdown Traffic Data</h4>
-            <p>November – December 2021</p>
-            <ul>
-                <li>Applied typical data science workflow (data cleaning, visualization, EDA, feature selection and modeling) on dataset which combined Uber Movement, Open Street Maps (OSM), census tracts of SF, and elevation datasets (for spatial partitioning purposes) to predict the effect of COVID on traffic speeds</li>
+        </section>
+        <div class="card mb-4">
+            <h3 class="card-header">Highlighted Projects</h3>
+            <div class="card-body">
+                <h4 class="card-title">Gitlet</h4>
+                <ul>
+                    <li>Coded Gitlet project, a <b>command line program</b> and a <b>version control</b> system using Java; the project architecture is inspired by the Git workflow, and has
+                        commands such as init, branch, checkout, and log, analogous to the original Git versions</li>
+                    <li>When the init command is used, a hidden .gitlet repo is created in the current working director; it keeps track of the files that are staged to be added, staged
+                        to be removed as well as those that are deleted, edited, or newly created (untracked) since the last commit</li>
+                    <li>Previous versions of files in the directory are saved using the Sha-1 code, the unique identifier of a file, and ensures <b>memory efficiency of VCS</b>; file opera-
+                        tions are handled using the java.nio and java.io packages and the last state of the program is preserved using the <b>Java Serialization API</b>
+                        </li>
+                </ul>
+
+                <h4 class="card-title">SECURE DATA STORAGE SYSTEM</h4>
+                <ul>
+                    <li>Designed and implemented an <b>end-to-end encrypted</b> file sharing system in Go. Incorporated industry-standard cryptographic measures, including password hashing for 
+                        enhanced user account security, symmetric key cryptography to ensure data confidentiality, and HMACs to provide robust data integrity</li>
+                    <li>Developed a sophisticated file management system with capabilities such as user authentication, efficient file storage/retrieval, and <b>secure file sharing/revocation</b>
+                         through digitally signed invitations</li>
+                    <li>Ensured robust data management and tracking by <b>utilizing UUIDs</b> for unique identification of various data structures in a multi-user environment</li>
+                </ul>
+
+                <h4 class="card-title">INTERNET PROTOCOL IMPLEMENTATION</h4>
+                <ul>
+                    <li>Implemented <b>Distance Vector Protocol</b> in Python for intradomain routing which computes efficient paths across the network; for this, a distributed algorithm running 
+                        at each router was used; split horizon, poison reverse, and route poisoning were utilized to ensure time efficiency and to avoid congestion</li>
+                    <li>Implemented <b>Socket API</b> which provides a logical pipe that connects a sender and a receiver; it uses Transmission Control Protocol to provide reliability; lost packets 
+                        are retransmitted based on the nonfixed Retransmission Timeout value, which is constantly updated based on Round Trip Time, to avoid sending duplicate packets</li>
+                </ul>
+
+                <h4 class="card-title">FESTIVAI</h4>
+                <ul>
+                    <li>Developed FestivAI, a personalized festival companion <b>web application</b> that helps users schedule their festival activities</li>
+                    <li>Applied <b>user-centered design principles</b> by conducting contextual inquiry, task analysis using and iteratively improved the product based on user
+                        needs. Interviewed festival attendees, observed their scheduling processes without our app to pinpoint the key functionalities we should add in the app</li>
+                    <li>Represented the FestivAI project in a web app fair as a team, creating a poster to communicate our design process, features, and benefits to attendees</li>
+                </ul>
+
+                <h4 class="card-title">NUMC</h4>
+                <ul>
+                    <li>Wrote Numpy in C which can perform matrix and vector operations, using <b>C memory management</b>, double pointers, and structs to architect the solution</li>
+                    <li>Used <b>SIMD instructions</b> implemented through <b>Intel Intrinsic, thread-level parallelism</b> using <b>OpenMP API, loop unrolling and algorithmic optimization</b>
+                        techniques to improve the performance of array operations which significantly increased program speed</li>
+                </ul>
+
+                <h4 class="card-title">PREDICTING CELL TYPES USING MACHINE LEARNING & DEEP LEARNING</h4>
+                <ul>
+                    <li>Developed a <b>machine learning model</b> to predict cell type labels from transcriptional profiles using various classifiers including <b>Decision Tree</b>,
+                        <b>Random Forest</b>, <b>K-Nearest Neighbors</b>, <b>Support Vector Machine</b>, <b>XGBoost</b>, and Ensemble methods such as <b>Gradient Boosting</b>, <b>AdaBoost</b>, <b>Extra Trees</b>, <b>Bagging</b>,
+                        <b>Stacking</b>, and <b>Voting classifiers</b>.</li>
+                    <li>Designed and implemented a <b>Neural Network</b> using <b>PyTorch</b>, exploring the potential of deep learning methodologies in transcriptional profile classification.</li>
+                    <li>Utilized dimensionality reduction techniques, including <b>PCA</b>, <b>t-SNE</b>, and <b>Autoencoders</b>, to manage the high-dimensional RNA-seq data, significantly improving the computational
+                         efficiency of the project.</li>
+                    <li>Implemented an efficient process for <b>hyperparameter tuning</b> and model selection, manually exploring a wide range of parameter values for each classifier.</li>
+                    <li>Achieved the highest model performance using a <b>Voting classifier</b> with a soft voting strategy, yielding a training accuracy of 100% and testing accuracy of 87.14%.</li>
+                </ul>
+
+                <h4 class="card-title">UBER POST-LOCKDOWN TRAFFIC DATA</h4>
+                <ul>
+                    <li>Applied typical <b>data science workflow</b> (data cleaning, visualization, EDA, feature selection and modeling) on dataset which combined Uber Movement, Open Street 
+                        Maps (OSM), census tracts of SF, and elevation datasets (for spatial partitioning purposes) to predict the effect of COVID on traffic speeds</li>
                 <li>Analyzed traffic speeds mapped by GPS coordinate using GeoDataFrame which mapped speed data to each GeoPandas point</li>
-                <li>In order to evaluate our hypothesis, as a team, developed various models including supervised regression model, k-nearest neighbors regression, decision
-                    tree regression, and linear regression; using the new data, drew conclusions from post-lockdown models to fix pre-lockdown ones, so that the traffic models- based estimates get used for pricing strategies</li>
-            </ul>
-        </li>
-        <li>
-            <h4>GITLET</h4>
-            <p>November – December 2021</p>
-            <ul>
-                <li>Coded Gitlet project, a command line program and a version control system using Java; the project architecture is inspired by the Git workflow, and has
-                    commands such as init, branch, checkout, and log, analogous to the original Git versions</li>
-                <li>When the init command is used, a hidden .gitlet repo is created in the current working director; it keeps track of the files that are staged to be added, staged
-                    to be removed as well as those that are deleted, edited, or newly created (untracked) since the last commit</li>
-                <li>Previous versions of files in the directory are saved using the Sha-1 code, the unique identifier of a file, and ensures memory efficiency of VCS; file opera-
-                    tions are handled using the java.nio and java.io packages and the last state of the program is preserved using the Java Serialization API
-                    </li>
-            </ul>
-        </li>
+                <li>In order to evaluate our hypothesis, as a team, developed various models including <b>supervised regression model, k-nearest neighbors regression, decision
+                    tree regression, and linear regression</b>; using the new data, drew conclusions from post-lockdown models to fix pre-lockdown ones, so that the traffic models- 
+                    based estimates get used for pricing strategies</li>
+                </ul>
 
-        <li>
-            <h4>Enigma</h4>
-            <p>October 2021</p>
-            <ul>
-                <li>Built a simulator in Java for a generalized version of the Enigma cypher machine</li>
-                <li>Project uses the Object-Oriented Programming Paradigm with appropriate data structures to implement reciprocal enigma algorithms</li>
-                <li>Program receives the following input: a configuration file containing the relevant information about the machine, the rotors and 
-                    reflectors being used and their corresponding inner wirings, an input file containing the current machine settings in which the message 
-                    will either be encoded or decoded, and an output file where the resulting encrypted/decrypted message is written</li>
-            </ul>
-        </li>
-    </ul>
+                <h4 class="card-title">ENIGMA</h4>
+                <ul>
+                    <li>Built a simulator in Java for a generalized version of the Enigma cypher machine</li>
+                    <li>Project uses the <b>Object-Oriented Programming Paradigm</b> with appropriate data structures to implement reciprocal enigma algorithms</li>
+                    <li>Program receives the following input: a configuration file containing the relevant information about the machine, the rotors and 
+                        reflectors being used and their corresponding inner wirings, an input file containing the current machine settings in which the message 
+                        will either be encoded or decoded, and an output file where the resulting encrypted/decrypted message is written</li>
+                </ul>
 
-    
-    <hr size="3" noshade>
-    <h3>Work Experience</h3>
-    <ul>
-        <li>
-            <h4>Sentromer DNA Technologies Inc.</h4>
-            <h5>Research & Development Intern</h5>
-            <p>September – December 2022</p>
-            <ul>
-                <li>Collaborated with the R&D team during the development and optimization of COVID-19 test kits</li>
-                <li>Undertook an independent project developing Java-based software tools for lab automation; developed a codon optimization algorithm to find the
+
+            </div>
+        </div>
+        <div class="card mb-4">
+            <h3 class="card-header">Work Experience</h3>
+            <div class="card-body">
+                <h4 class="card-title">Sentromer DNA Technologies Inc. | R&D Engineer Intern</h4>
+                <p>April – May 2021</p>
+                <ul>
+                    <li>Collaborated with the R&D team during the development and optimization of COVID-19 test kits</li>
+                    <li>Undertook an independent project developing Java-based software tools for lab automation; developed a codon optimization algorithm to find the
                     best synthetic sequence for maximizing gene expression (based on prior experimental data), involving the use of sliding window analysis and Monte
                     Carlo simulations; built an inventory management system with custom parsers and serializers for efficient data processing and inventory tracking</li>
-                <li>Participated in Solid-Phase Oligonucleotide Synthesis procedures, facilitating the progress of molecular experiments</li>
-                <li>Presented research findings on the applications of LPS derivatives in vaccine technology and allergen immunotherapy to the R&D teams</li>
-                <li>Demonstrated strong communication and collaboration skills, working alongside a diverse team of engineers and scientists</li>
+                    <li>Participated in Solid-Phase Oligonucleotide Synthesis procedures, facilitating the progress of molecular experiments</li>
+                    <li>Presented research findings on the applications of LPS derivatives in vaccine technology and allergen immunotherapy to the R&D teams</li>
+                    <li>Demonstrated strong communication and collaboration skills, working alongside a diverse team of engineers and scientists</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <h3 class="card-header">Certificates</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">DALF C1 French Language Certificate<br>Ministère de l'Éducation nationale et de la Jeunesse</li>
             </ul>
-        </li>
-    </ul>
+        </div>
+        <div class="card mb-4">
+            <h3 class="card-header">Contact Information</h3>
+            <div class="card-body">
+                <ul>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ege-usel-a2aa50191" target="_blank">https://www.linkedin.com/in/ege-usel-a2aa50191</a></li>
+                    <li><strong>Email:</strong> egeusel@berkeley.edu</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-    <hr size="3" noshade>
-    <h3>Certificates</h3>
-    <ul>
-        <li>DALF C1 French Language CertificateDALF C1 French Language Certificate<br>
-            Ministère de l'Éducation nationale et de la Jeunesse</li>
-    </ul>
-    
-
-    <hr size="3" noshade>
-    <h3>Contact Information</h3>
-    <p>
-        <em>linkedin:</em> https://www.linkedin.com/in/ege-usel-a2aa50191<br>
-        <em>email:</em> egeusel@berkeley.edu<br>
-    
-        
-        <!-- <a href="contact-me.html">CONTACT ME</a> -->
-        
-        <!-- Include links to LinkedIn and Github --> 
-    </p>
 </body>
 </html>
