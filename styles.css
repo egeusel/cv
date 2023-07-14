@@ -71,7 +71,8 @@ body {
 }
 
 a {
-    color: #354458;
+    color: #0a67c4;
+    text-decoration-line:  underline;
 }
 
 a:hover {
@@ -126,7 +127,16 @@ a:hover {
     background-color: #f8f9fa;
     color: #333333;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     padding: 10px;
     border-radius: .25rem;
 }
+
+/* .main-title2 {
+    font-size: 2.5em;
+    background-color: #f8f9fa;
+    color: #333333;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: .25rem;
+} */
