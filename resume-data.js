@@ -8,7 +8,7 @@
         email: "egeusel@berkeley.edu",
         linkedin: "https://www.linkedin.com/in/ege-usel-a2aa50191",
         photo: "profilePhoto.png",
-        bio: "I am a software engineer with a strong foundation in Java development, Python, data pipelines, and full-stack web development. Currently, I build software solutions at Amgen Inc., utilizing technologies such as React, Plotly Dash, and distributed computing for backend data processing with Spark. I hold a degree in Computer Science and Bioengineering from UC Berkeley.",
+        bio: "I am a Software Engineer II at Microsoft on the Microsoft Graph API Gateway team, where I build large-scale backend systems and AI-powered developer tooling. My background spans C#, Java, Python, distributed data pipelines, and full-stack development, and I hold a Bachelor of Arts in Computer Science and a Bachelor of Science in Bioengineering from UC Berkeley.",
         skills: [
             {
                 name: "Programming Languages",
@@ -33,7 +33,7 @@
                 title: "Software Engineer-II",
                 date: "January 2026 &ndash; present",
                 bullets: [
-                    "Working on Microsoft Graph Unified Gateway Team"
+                    "Working on the Microsoft Graph API Gateway team."
                 ]
             },
             {
@@ -262,11 +262,12 @@
     `;
 
     const conceptLinks = (activeConcept) => {
-        const names = ["Editorial", "Executive", "Technical", "Bento", "Minimal"];
+        const names = ["Editorial", "Executive", "Technical"];
         return names.map((name, index) => {
-            const concept = index + 2;
+            const concept = index + 1;
             const current = concept === activeConcept ? ' aria-current="page"' : "";
-            return `<a href="index${concept}.html"${current} aria-label="${name} design">${String(index + 1).padStart(2, "0")}</a>`;
+            const href = concept === 1 ? "index.html" : `index${concept}.html`;
+            return `<a href="${href}"${current} aria-label="${name} design">${String(concept).padStart(2, "0")}</a>`;
         }).join("");
     };
 
@@ -277,7 +278,6 @@
         }
 
         const activeConcept = Number(document.body.dataset.concept || 2);
-        const conceptName = document.body.dataset.conceptName || "Alternate";
         const profilePhoto = document.body.dataset.profilePhoto || resume.photo;
 
         root.innerHTML = `
@@ -304,7 +304,7 @@
                         </div>
                         <dl class="quick-facts">
                             <div><dt>Now</dt><dd>Microsoft</dd></div>
-                            <div><dt>Focus</dt><dd>Full-stack + Data</dd></div>
+                            <div><dt>Focus</dt><dd>Backend + Full-Stack + AI &amp; Data</dd></div>
                             <div><dt>Education</dt><dd>UC Berkeley</dd></div>
                         </dl>
                     </div>
@@ -317,13 +317,6 @@
                             <strong>Microsoft</strong>
                         </figcaption>
                     </figure>
-                </div>
-                <div class="concept-note shell">
-                    <span>${conceptName} concept</span>
-                    <div class="concept-switcher" aria-label="Alternate designs">
-                        <span>View</span>
-                        ${conceptLinks(activeConcept)}
-                    </div>
                 </div>
             </header>
 
@@ -365,7 +358,7 @@
                     ${sectionHeading("03", "Selected Projects", "Systems, product experiments, and research work. Open any project for the full detail.")}
                     <div class="project-grid">
                         ${resume.projects.map((project, index) => `
-                            <details class="project"${index === 0 ? " open" : ""}>
+                            <details class="project"${activeConcept === 1 || index === 0 ? " open" : ""}>
                                 <summary>
                                     <span class="project-index">${String(index + 1).padStart(2, "0")}</span>
                                     <span class="project-heading">
@@ -428,7 +421,6 @@
                 <section class="contact-section" id="contact">
                     <div class="shell contact-inner">
                         <p class="eyebrow">Open to a conversation</p>
-                        <h2>Let&rsquo;s build something useful.</h2>
                         <a href="mailto:${resume.email}">${resume.email}</a>
                         <div class="contact-links">
                             <a href="${resume.linkedin}" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">&nearr;</span></a>
@@ -439,14 +431,20 @@
             </main>
 
             <footer class="site-footer">
-                <div class="shell">
+                <div class="shell footer-meta">
                     <span>&copy; Ege Usel</span>
                     <a href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+                </div>
+                <div class="concept-note shell">
+                    <span>Change theme</span>
+                    <div class="concept-switcher" aria-label="Alternate designs">
+                        ${conceptLinks(activeConcept)}
+                    </div>
                 </div>
             </footer>
         `;
 
-        if (activeConcept === 2) {
+        if (activeConcept >= 1 && activeConcept <= 3) {
             const main = root.querySelector("main");
             const skillsSection = root.querySelector(".skills-section");
             const experienceSection = root.querySelector(".experience-section");
@@ -454,7 +452,7 @@
             const experienceNumber = experienceSection?.querySelector(".section-number");
 
             if (!main || !skillsSection || !experienceSection || !skillsNumber || !experienceNumber) {
-                throw new Error("Editorial section ordering could not be initialized.");
+                throw new Error("Resume section ordering could not be initialized.");
             }
 
             main.insertBefore(experienceSection, skillsSection);
